@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/RGB__V6.1.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="index.html"><img src="img/2cf30ffdbfa3db621d303e9575ff9e47.gif">SAVE THE WORLD</a>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html" class="menu-item">Home</a></li>
+            <li><a href="about.html" class="menu-item">About</a></li>
+            <li><a href="resources.html" class="menu-item">Resources</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <section class="text">
+        <h1>WHY WAS THIS WEBSITE MADE</h1>
+        <p>
+            This website was created to raise awareness about climate change, its effect on our planet and ways to stop
+            it (hopefully).
+        </p>
+    </section>
+    <section class="before-after">
+        <h2>Hover over the images to see before and after</h2>
+        <button id="comp">Compare</button>
+        <div>
+            <img class="before" src="img/before-after/antarctica_tmo_before-01.jpg">
+            <img class="after" src="img/before-after/antarctica_tmo_after-01.jpg">
+        </div>
+        <div>
+            <img class="before" src="img/before-after/iberiadrought_oli_202165_crop2048.jpg">
+            <img class="after" src="img/before-after/iberiadrought_oli_202243_crop2048.jpg">
+        </div>
+        <div>
+            <img class="before" src="img/before-after/iceshelfcollapse_oli_202209_lrg.jpeg">
+            <img class="after" src="img/before-after/iceshelfcollapse_oli_202282_lrg.jpeg">
+        </div>
+        <div>
+            <img class="before" src="img/before-after/lake_urmia_june_2021_before.jpg">
+            <img class="after" src="img/before-after/lake_urmia_nov_2021_after.jpg">
+        </div>
+    </section>
+    <footer>
+        <img class="logo-lg" src="img/RGB__V6.1.webp" alt="earth spinning">
+        <div>
+            <h3>Contact:</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/compare.js"></script>
+    <script>
+        sal();
+    </script>
+</body>
+
+</html>

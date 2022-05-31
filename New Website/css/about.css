@@ -1,0 +1,96 @@
+body {
+    padding-top: 60px;
+    background-color: #85FF9E;
+}
+
+section>* {
+    margin-bottom: 2em;
+    box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    text-align: center;
+    padding: 2em;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    background-color: var(--red);
+}
+
+h1,
+h2 {
+    padding: 2em;
+    width: 100%;;
+    border-radius: 1em;
+    margin-inline: auto;
+}
+
+.text p {
+    font-size: 2rem;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: var(--green);
+}
+
+.before-after {
+    width: 90%;
+    margin: auto;
+    padding-inline: 4em;
+}
+
+#comp {
+    position: fixed;
+    background-color: rgb(var(--darker-blue));
+    opacity: 40%;
+    left: 8px;
+    bottom: 8px;
+    appearance: none;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 2rem;
+    padding: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+#comp:hover {
+    background-color: rgb(var(--light-blue));
+    opacity: 100%;
+}
+
+h2 {
+    background-color: var(--gldn-rod);
+    font-size: 2.5rem;
+}
+
+.before-after div {
+    margin: 2em auto;
+    width: 60%;
+    aspect-ratio: 2/1;
+    position: relative;
+    padding: 20px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.before-after div img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+.before-after div .after {
+    display: none;
+}
+
+.before-after .compare .after {
+    display: block;
+}
+
+.before-after .compare .before {
+    display: none;
+}

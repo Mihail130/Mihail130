@@ -10,68 +10,109 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="img/2cf30ffdbfa3db621d303e9575ff9e47.gif" type="image/x-icon">
+    <link rel="shortcut icon" href="img/RGB__V6.1.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/main_style.css">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <a id="logo" href="#"><img src="img/2cf30ffdbfa3db621d303e9575ff9e47.gif">SAVE THE WORLD</a>
+        <a id="logo" href="index.html"><img src="img/2cf30ffdbfa3db621d303e9575ff9e47.gif">SAVE THE WORLD</a>
         <div class="menu-btn">
             <div class="menu-btn__lines"></div>
         </div>
         <ul class="menu-items">
-            <li><a href="#" class="menu-item">Home</a></li>
-            <li><a href="#" class="menu-item">Products</a></li>
-            <li><a href="#" class="menu-item">Contact</a></li>
-            <li><a href="#" class="menu-item">About</a></li>
+            <li><a href="index.html" class="menu-item">Home</a></li>
+            <li><a href="about.html" class="menu-item">About</a></li>
+            <li><a href="resources.html" class="menu-item">Resources</a></li>
         </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <section class="hero" style="background-image: url('img/stars.jpg');">
+        <video src="video/y2mate.com - The Breathtaking Beauty of Nature  HD_1080p_Trim.mp4" preload="auto" muted loop
+            autoplay></video>
         <h1>WE CAN SAVE THE WORLD!</h1>
         <a href="#" id="hero-btn">Learn more!</a>
     </section>
     <section class="info">
-        <h2>What we have to do?</h2>
-        <div>
+        <h2 data-sal="slide-down" data-sal-duration="500">What we have to do?</h2>
+        <div data-sal="slide-left" data-sal-duration="500">
             <div class="text">
                 <p>Make our cities clean, green and sustainable!</p>
             </div>
-            <div class="img-container">
-                <img src="img/City_SVG.svg" alt="city">
-            </div>
+            <img src="img/City_SVG.svg" alt="city">
         </div>
-        <div>
-            <div class="img-container">
-                <img src="img/Electric_car_SVG.svg" alt="city">
-            </div>
-            <div class="text">
+        <div data-sal="slide-right" data-sal-duration="500">
+            <img src="img/Electric_car_SVG.svg" alt="city">
+            <div class="text shapedividers_com-2496">
                 <p>Replace vehicle that run on fossil fuels with electric vehicles!</p>
             </div>
         </div>
-        <div>
+        <div data-sal="slide-left" data-sal-duration="500">
             <div class="text">
                 <p>Stop using fossil fuels altogether!</p>
             </div>
-            <div class="img-container">
-                <img src="img/—Pngtree—vector isometric illustration of a_3565497.png" alt="city">
-            </div>
+            <img src="img/—Pngtree—vector isometric illustration of a_3565497.png" alt="city">
         </div>
-        <div>
-            <div class="img-container">
-                <img src="img/104-removebg-preview.png" alt="city">
-            </div>
+        <div data-sal="slide-right" data-sal-duration="500">
+            <img src="img/104-removebg-preview.png" alt="city">
             <div class="text">
                 <p>And replace them with renewable energy sources!</p>
             </div>
         </div>
     </section>
+    <section class="info" id="misconceptions">
+        <h2 data-sal="slide-down" data-sal-duration="500">misconceptions!</h2>
+        <div data-sal="slide-right" data-sal-duration="500">
+            <div class="text">
+                <p>You individually are responsible for climate change!</p>
+            </div>
+            <img src="img/trash-svgrepo-com.svg" alt="city">
+        </div>
+        <div data-sal="slide-right" data-sal-duration="500">
+            <img src="img/leaf-svgrepo-com.svg" alt="city">
+            <div class="text">
+                <p>You can stop climate change by changing your lifestile!</p>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <h2 data-sal="slide-down" data-sal-duration="500">But you can't do it alone!</h2>
+        <div data-sal="slide-right" data-sal-duration="500">
+            <div class="text">
+                <p>Individuals cannot change much!</p>
+            </div>
+            <img src="img/Icons8_flat_businessman.svg.png" alt="city">
+        </div>
+        <div data-sal="slide-right" data-sal-duration="500">
+            <img src="img/factory-company-svgrepo-com.svg" alt="city">
+            <div class="text">
+                <p>We have to urge our governments and companies to change!</p>
+            </div>
+        </div>
+    </section>
     <footer>
-        <img class="logo-lg" src="img/download.png" alt="earth spinning">
+        <img class="logo-lg" src="img/RGB__V6.1.webp" alt="earth spinning">
+        <div>
+            <h3>Contact:</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal();
+    </script>
 </body>
 
 </html>
